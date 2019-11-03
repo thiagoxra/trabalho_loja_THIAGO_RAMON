@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Exemplo Junção de Elementos</title>
+        <script type="text/javascript" src="JQuery/jquery-2.0.0.js"></script>
+    </head>
+    <body>
+        <ul>
+            <li>Flamengo</li>
+            <li>Palmeiras</li>
+            <li>Santos</li>
+            <li>São Paulo</li>
+            <li>Fluminense</li>
+            <li>Goais</li>
+        </ul>
+        <script>
+            $("li").hide().parent().before("<a href='javascript:void(0)'>Mostrar times do Brasileirão</a>");
+            $("a").click(function(){
+                $("li").show();
+            });
+        </script>
+    </body>
+</html>

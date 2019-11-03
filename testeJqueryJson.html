@@ -1,0 +1,26 @@
+<html> 
+    <head>
+        <title>JavaScript - read JSON from URL</title>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    </head>
+    <body>
+        <div class="mypanel"></div>
+        <script>
+        $.getJSON('JQuery/testeJqueryJson.json', function (data){
+            var item;
+            $.each(data, function(i, cliente){
+                item = "<li><p><b>Nome:</b> " + cliente.nome +
+                    "</p><p><b>Sobrenome:</b> " + cliente.sobrenome +
+                    "</p><p><b>Idade:</b> " + cliente.idade +
+                    "</p><p><b>Sexo:</b> " + cliente.sexo +
+                    "</p><p><b>Foto:</b><img src=" +cliente.image + " alt=" + cliente.nome + ">" + "</p></li>";
+                $("#listaClientes").append(item);
+            });
+        });
+        </script>
+        <section>
+            <h1>jQuery + JSON + AJAX</h1>
+            <ul id="listaClientes"></ul>
+        </section>
+    </body>
+</html>
