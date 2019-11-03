@@ -9,7 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Carrinho de compras</title>
     <script type="text/javascript" src="jQuery/jquery-3.4.1.min.js"></script>    
-    <script type="text/javascript" src="js/Produtos.js"></script>
+    <script type="text/javascript" src="js/Carrinho.js"></script>
     <link href="css/carrinho.css" rel="stylesheet">
 </head>
 <body>
@@ -33,13 +33,17 @@
                 </li>            
             </ul>
             </div>
-            
+            <img src="img/carrinho.png" width="30" height="30" alt="">
+            <p id="qtd" style="color:white"></p>
         </nav>
     </header>
 
     <main id="corpocarrinho">
-        <ul id = "carrinho">
-        </ul>            
+        <div class="container">
+            <ul id = "carrinho" class="list-group">
+            </ul>  
+        </div>
+                  
     </main>
 
     <footer class="text-muted">

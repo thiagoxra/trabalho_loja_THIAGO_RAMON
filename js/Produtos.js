@@ -29,16 +29,16 @@ $.getJSON('json/Produtos.json', function (t) {
     var item = '<div class="row" id="itens">';        
     $.each(t, function (index, value){
         item +='<div class="col-md-4">'+
-        '<div class="card mb-4 shadow-sm">'+
+        '<div class="card text-white bg-dark border-dark mb-4 shadow-sm">'+
         '<img src="img/'+value.image+'" class="card-img-top" alt="'+value.marca+'" width="200px" height="300px">'+
             '<div class="card-body">'+'<span id="CodigoProduto" class="'+value.codigo+'"></span>'+
             '<p class="card-text">'+value.nome+'</p>'+
             '<p class="card-text">R$' + parseFloat(value.preco).toFixed(2) + '</p>'+            
             '<div class="d-flex justify-content-between align-items-center">'+
                 '<div class="btn-group">'+
-                '<button type="button" id = "'+value.codigo+'" class="btn btn-sm btn-outline-secondary adicionar">Adicionar ao Carrinho</button>'+
+                '<button type="button" id = "'+value.codigo+'" class="btn btn-sm btn-outline-light adicionar">Adicionar ao Carrinho</button>'+
                 '</div>'+
-                '<small class="text-muted">'+value.marca+'</small>'+
+                '<small >'+value.marca+'</small>'+
             '</div>'+
             '</div>'+
         '</div>'+
@@ -67,12 +67,5 @@ $(document).ready(function (){
 $(document).ready(function (){
     $('#salvarcarrinho').click(function(event){
         localStorage.setItem("escolhidos",JSON.stringify(carrinhoCompras));
-    });
-});
-//criando tela do carrinho
-$(document).ready(function (){
-    var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
-    $.each(escolhidos, function (index, value){
-            $('#carrinho').append('<li> '+value.nome+'</li>')
     });
 });
