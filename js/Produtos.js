@@ -48,7 +48,7 @@ $.getJSON('json/Produtos.json', function (t) {
     $('#itens').append(item);
 });     
 
-//adicionar item ao carrinho
+//numero de itens no carrinho
 $(document).ready(function (){
     $('.adicionar').click(function(event){
         var itemAdicionado = event.target.id;
@@ -63,21 +63,16 @@ $(document).ready(function (){
     });
 });
 
-
-
+//salvando dados permanentemente no carrinho
 $(document).ready(function (){
-    $.each(carrinhoCompras, function (index, value){
-            $('#carrinho').append('<li> '+value+'</li>')
+    $('#salvarcarrinho').click(function(event){
+        localStorage.setItem("escolhidos",JSON.stringify(carrinhoCompras));
     });
 });
-
-//numero de itens no carrinho
+//criando tela do carrinho
 $(document).ready(function (){
-    $('#mostrar').click(function(event){
-        $.each(carrinhoCompras, function (index, value){
-            console.log(carrinhoCompras[index].nome);
-        });
+    var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
+    $.each(escolhidos, function (index, value){
+            $('#carrinho').append('<li> '+value.nome+'</li>')
     });
 });
-
-

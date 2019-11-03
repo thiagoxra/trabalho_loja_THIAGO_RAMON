@@ -1,7 +1,7 @@
 [
     {
         "nome":"Smartphone Samsung Galaxy A50 ",
-        "preço":1439.10,
+        "preco":1439.10,
         "marca":"Samsung",
         "cor":"preto",
         "tipo":"Celular",     
@@ -9,8 +9,8 @@
         "codigo": 1  
     },
     {
-        "nome":"Smartphone Motorola Moto G7 Power 64GB ",
-        "preço":966.24,
+        "nome":"Smartphone Motorola Moto G7 Power",
+        "preco":966.24,
         "marca":"Motorola",
         "cor":"Azul",
         "tipo":"Celular",     
@@ -19,16 +19,16 @@
     },
     {
         "nome":"Smart TV Led 32'' LG 32LM625 HD Thinq AI ",
-        "preço":898.00,
+        "preco":898.00,
         "marca":"LG",
         "cor":"Preta",
         "tipo":"TV",     
         "image":"figura3.jpg",
-        "codigo": 2
+        "codigo": 3
     },
     {
         "nome":"Smart TV LED 43'' Samsung 43RU7100 Ultra HD 4K ",
-        "preço":1439.99,
+        "preco":1439.99,
         "marca":"Samsung",
         "cor":"Preta",
         "tipo":"TV",     
@@ -37,7 +37,7 @@
     },
     {
         "nome":"Smart TV LED LG 49'' 49SM8000 Ultra HD 4K ",
-        "preço":2298.99,
+        "preco":2298.99,
         "marca":"Samsung",
         "cor":"Preta",
         "tipo":"TV",     
@@ -46,75 +46,75 @@
     },
     {
         "nome":"Controle Dualshock 4 Midnight Blue - PS4 ",
-        "preço":214.50,
+        "preco":214.50,
         "marca":"Midnight Blue",
         "cor":"Azul",
         "tipo":"Controle",     
         "image":"figura5.jpg",
-        "codigo": 5
+        "codigo": 6
     },
     {
         "nome":"Controle Sem Fio PS4 Dualshock Vermelho - Sony ",
-        "preço":214.50,
+        "preco":214.50,
         "marca":"Midnight Blue",
         "cor":"Vermelho",
         "tipo":"Controle",     
         "image":"figura6.jpg",
-        "codigo": 6
+        "codigo": 7
     },
     {
         "nome":"Game God Of War - PS4 ",
-        "preço":79.99,
+        "preco":79.99,
         "marca":"Sony DADC",
         "cor":"NA",
         "tipo":"Game",     
         "image":"figura7.jpg",
-        "codigo": 7
+        "codigo": 8
     },
     {
         "nome":"Game Marvel's Spider-Man - PS4 ",
-        "preço":94.90,
+        "preco":94.90,
         "marca":"Sony DADC",
         "cor":"NA",
         "tipo":"Game",     
         "image":"figura8.jpg",
-        "codigo": 8
+        "codigo": 9
     },
     {
         "nome":"Console Playstation 4 Slim 1TB Hits Bundle 5 ",
-        "preço":2299.99,
+        "preco":2299.99,
         "marca":"Sony DADC",
         "cor":"NA",
         "tipo":"Console",     
         "image":"figura9.jpg",
-        "codigo": 9
-    },
-    {
-        "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
-        "preço":2393.90,
-        "marca":"Sony DADC",
-        "cor":"NA",
-        "tipo":"Game",     
-        "image":"figura10.jpg",
         "codigo": 10
     },
     {
         "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
-        "preço":2393.90,
+        "preco":2393.90,
         "marca":"Sony DADC",
         "cor":"NA",
-        "tipo":"Game",
-        "image":"figura11.jpg",
+        "tipo":"Game",     
+        "image":"figura10.jpg",
         "codigo": 11
     },
     {
         "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
-        "preço":2393.90,
+        "preco":2393.90,
+        "marca":"Sony DADC",
+        "cor":"NA",
+        "tipo":"Game",
+        "image":"figura11.jpg",
+        "codigo": 12
+    },
+    {
+        "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
+        "preco":2393.90,
         "marca":"Sony DADC",
         "cor":"NA",
         "tipo":"Game",
         "image":"figura12.jpg",
-        "codigo": 12
+        "codigo": 13
     },
     {
         "nome":"Smartwatch Amazfit Bip",
@@ -135,7 +135,7 @@
         "codigo":17
     },
     {
-        "nome":"10 lições sobre Sócrates",
+        "nome":"10 licões sobre Sócrates",
         "preco":14.25,
         "marca":"Editora Vozes",
         "cor":"Branco",
