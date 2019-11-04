@@ -36,49 +36,40 @@
         "codigo": 4
     },
     {
-        "nome":"Smart TV LED LG 49'' 49SM8000 Ultra HD 4K ",
-        "preco":2298.99,
-        "marca":"Samsung",
-        "cor":"Preta",
-        "tipo":"TV",     
+        "nome":"Controle Dualshock 4 - PS4",
+        "preco":200.99,
+        "marca":"Sony",
+        "cor":"Azul",
+        "tipo":"Joystick",     
         "image":"figura5.jpg",
         "codigo": 5
     },
     {
-        "nome":"Controle Dualshock 4 Midnight Blue - PS4 ",
+        "nome":"Controle Dualshock 4 - PS4 ",
         "preco":214.50,
-        "marca":"Midnight Blue",
+        "marca":"Sony",
         "cor":"Azul",
-        "tipo":"Controle",     
-        "image":"figura5.jpg",
-        "codigo": 6
-    },
-    {
-        "nome":"Controle Sem Fio PS4 Dualshock Vermelho - Sony ",
-        "preco":214.50,
-        "marca":"Midnight Blue",
-        "cor":"Vermelho",
-        "tipo":"Controle",     
+        "tipo":"Joystick",     
         "image":"figura6.jpg",
-        "codigo": 7
+        "codigo": 6
     },
     {
         "nome":"Game God Of War - PS4 ",
         "preco":79.99,
-        "marca":"Sony DADC",
+        "marca":"Sony",
         "cor":"NA",
         "tipo":"Game",     
         "image":"figura7.jpg",
-        "codigo": 8
+        "codigo": 7
     },
     {
         "nome":"Game Marvel's Spider-Man - PS4 ",
         "preco":94.90,
-        "marca":"Sony DADC",
+        "marca":"Sony",
         "cor":"NA",
         "tipo":"Game",     
         "image":"figura8.jpg",
-        "codigo": 9
+        "codigo": 8
     },
     {
         "nome":"Console Playstation 4 Slim 1TB Hits Bundle 5 ",
@@ -87,34 +78,61 @@
         "cor":"NA",
         "tipo":"Console",     
         "image":"figura9.jpg",
-        "codigo": 10
+        "codigo": 9
     },
     {
         "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
         "preco":2393.90,
-        "marca":"Sony DADC",
+        "marca":"Microsoft",
         "cor":"NA",
         "tipo":"Game",     
         "image":"figura10.jpg",
-        "codigo": 11
+        "codigo": 10
     },
     {
-        "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
-        "preco":2393.90,
-        "marca":"Sony DADC",
-        "cor":"NA",
-        "tipo":"Game",
+        "nome":"Notebook Dell Inspiron I15-3583-A3XB",
+        "preco":2452.65,
+        "marca":"DELL",
+        "cor":"Branco",
+        "tipo":"Computador",
         "image":"figura11.jpg",
-        "codigo": 12
-    },
+        "codigo":11
+    },    
     {
-        "nome":"Console Xbox One X 1TB 4K+ Controle sem Fio ",
-        "preco":2393.90,
-        "marca":"Sony DADC",
+        "nome":"Gift Card Digital Google Play R$ 50",
+        "preco":50.00,
+        "marca":"Google",
         "cor":"NA",
-        "tipo":"Game",
+        "tipo":"Card",
         "image":"figura12.jpg",
-        "codigo": 13
+        "codigo":12
+    },    
+    {
+        "nome":"Gift Card Digital Uber R$ 50",
+        "preco":50.00,
+        "marca":"UBER",
+        "cor":"NA",
+        "tipo":"Card",
+        "image":"figura13.jpg",
+        "codigo":13
+    },    
+    {
+        "nome":"Sauté Grand 24cm",
+        "preco":215.65,
+        "marca":"Polishop",
+        "cor":"Preta",
+        "tipo":"Panela",
+        "image":"figura14.jpg",
+        "codigo":14
+    },    
+    {
+        "nome":"Nescafé Dolce Gusto Lumio 15",
+        "preco":279.99,
+        "marca":"ARNO",
+        "cor":"Preta",
+        "tipo":"Cafeteira",
+        "image":"figura15.jpg",
+        "codigo":15
     },
     {
         "nome":"Smartwatch Amazfit Bip",
