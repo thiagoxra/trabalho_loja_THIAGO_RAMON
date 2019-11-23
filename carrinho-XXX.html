@@ -1,24 +1,25 @@
-<!doctype html>
-<html lang="pt-br">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Bem vindo ao Varejao</title>
+    <title>Carrinho de compras</title>
     <script type="text/javascript" src="jQuery/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="js/Produtos.js"></script>
+    <script type="text/javascript" src="js/Carrinho.js"></script>
 
-    <link rel="stylesheet" href="css/estilo_layout_teste.css">
+    <link rel="stylesheet" href="../trabalho_loja_THIAGO_RAMON/css/estilo_layout_teste.css">
+    <!--ERRO NESSE LINK -->
     <link href="css/carrosel.css" rel="stylesheet">
     <link href="css/carrinho.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>    
+    <header>
         <div class="container">
             <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
                 <a class="navbar-brand" href="projetos-XXX.html">
@@ -58,7 +59,9 @@
                         </li>
                         <li class="nav-item">
                             <div>
-                                <a href="carrinho.html"><img id="cart" src="img/carrinho.png"></a>
+                                <a href="carrinho.html"><img id="cart" src="img/carrinho.png" width="30" height="30"
+                                        alt=""></a>
+                                <span id="qtd" style="color:white">0</span>
                             </div>
                         </li>
                     </ul>
@@ -70,63 +73,13 @@
         <!--Fim de container -->
     </header>
     <article>
-        <div class="titulo-pagina">
+        <main id="corpocarrinho">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-3 p-4">
-                        <a class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                DEPARTAMENTOS
-                            </a>
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Celular</a>
-                            <a class="dropdown-item" href="#">TV</a>
-                            <a class="dropdown-item" href="#">Controle</a>
-                            <a class="dropdown-item" href="#">Game</a>
-                            <a class="dropdown-item" href="#">Console</a>
-                            <a class="dropdown-item" href="#">Livro</a>
-                        </div>
-                        <!--fim lista -->
-                    </div>
-                    <div class="col-md-6 p-4">
-                        <h1>#VEMLOGO BLACK FRIDAY</h1>
-                    </div>
-                    <div class="col-md-3 p-4">
-                        <h1>vai começar! ></h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <main role="main">
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
-                </ol>
-                <div id="carrosel" class="carousel-inner">
-
-                </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-
-            <div class="album py-5 bg-light">
-                <div class="container" id="itens">
-                </div>
+                <ul id="carrinho" class="list-group">
+                </ul>
             </div>
 
         </main>
-
     </article>
     <aside id="entre-em-contato">
         <div class="container">
@@ -143,27 +96,23 @@
             </div>
         </div>
     </aside>
-
     <footer class="text-muted">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <p class="float-right">
-                        <a href="#">Voltar ao Topo </a>
-                    </p>
-                    <p><b>Ramon Souza de Oliveira</b></p>
-                    <p><b>Thiago Xavier</b></p>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <p class="float-right ">
+                            <a href="#">Voltar ao Topo </a>
+                        </p>
+                        <p>Ramon Souza de Oliveira</p>
+                        <p>Thiago Xavier</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     <script src="../bootstrap/js/jquery-3.3.1.slim.min.js"></script>
     <script src="../bootstrap/js/popper.min.js"></script>
     <script src="../bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
     </script>

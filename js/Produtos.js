@@ -1,4 +1,13 @@
-var carrinhoCompras = [];
+    var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
+    if (escolhidos.length == 0)
+    var carrinhoCompras = []; 
+    else
+    var carrinhoCompras = escolhidos;                  
+
+ $(document).ready(function (){
+    var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
+    $('#qtd').html(escolhidos.length);                  
+});
 
 //criacao de itens do carrosel
 $.getJSON('json/Produtos.json', function (t) {
@@ -69,3 +78,4 @@ $(document).ready(function (){
         localStorage.setItem("escolhidos",JSON.stringify(carrinhoCompras));
     });
 });
+
