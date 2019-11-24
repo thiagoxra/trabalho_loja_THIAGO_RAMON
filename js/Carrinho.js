@@ -10,21 +10,25 @@ function start(){
 
     $('#carrinho').html('');
     $.each(carrinhoCompras, function (index, value){
-        $('#carrinho').append('<li class="list-group-item d-flex justify-content-between align-items-center">'+value.nome+
-        '<span class="badge badge-primary badge-pill">R$' + parseFloat(value.preco).toFixed(2) + '</span>'+
-        '<a href="carrinho.html"><button type="button" id = "'+value.codigo+'" class="excluir btn btn-sm">Excluir</button></a></li>');
+        $('#carrinho').append('<li class="list-group-item d-flex justify-content-between align-items-center">'+
+        '<div style="width: 60px;"><img src="img/'+value.image+'" class="card-img-top" alt="'+value.marca+'" width="100px" height="70px"></div>'+
+        '<div style="padding-left: 10px; width: 600px;">'+value.nome+'</div>'+
+        '<div class="" style="width: 100px;"><span class="badge badge-primary badge-pill">R$' + parseFloat(value.preco).toFixed(2) + '</span></div>'+
+        '<div><a href="carrinho.html"><button type="button" id = "'+value.codigo+'" class="excluir btn btn-sm btn-outline-danger">Excluir</button></a></div></li>');
         total +=value.preco;        
     });
-    $('#carrinho').append('<li class="list-group-item d-flex justify-content-between align-items-center"> TOTAL '+
+    $('#carrinho').append('<li class="list-group-item d-flex justify-content-between align-items-center">'+
+    '<div style="padding-left: 10px; width: 600px;"> TOTAL </div> '+
         '<span class="badge badge-danger badge-pill">R$' + parseFloat(total).toFixed(2) + '</span></li>');
 
 }
 
-//criando tela do carrinho e numero de itens no carrinho
+//Criando tela do carrinho e numero de itens no carrinho
 $(document).ready(function (){
     start();    
 });
 
+//Excluir um item do carrinho
 $(document).ready(function(){
     $('.excluir').click(function(event){     
         var itemexcluido = event.target.id;
@@ -36,5 +40,13 @@ $(document).ready(function(){
                 return false;                 
             }            
         });
+    });
+});
+
+//Limpar carrinho
+$(document).ready(function(){
+    $('.limpar').click(function(event){     
+        var carrinhoCompras = [];
+        localStorage.setItem("escolhidos",JSON.stringify(carrinhoCompras));
     });
 });
