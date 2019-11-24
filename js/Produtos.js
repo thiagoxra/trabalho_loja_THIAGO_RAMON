@@ -1,12 +1,11 @@
-    var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
-    if (escolhidos.length == 0)
-    var carrinhoCompras = []; 
-    else
-    var carrinhoCompras = escolhidos;                  
+if (JSON.parse(localStorage.getItem("escolhidos")) == null)
+var carrinhoCompras = []; 
+else
+var carrinhoCompras = JSON.parse(localStorage.getItem("escolhidos"));                  
 
- $(document).ready(function (){
+$(document).ready(function (){
     var escolhidos = JSON.parse(localStorage.getItem("escolhidos"));
-    $('#qtd').html(escolhidos.length);                  
+    $('#qtd').html(carrinhoCompras.length);                  
 });
 
 //criacao de itens do carrosel
