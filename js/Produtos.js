@@ -21,7 +21,7 @@ $.getJSON('json/Produtos.json', function (t) {
         else{
             item +='<div class="carousel-item" data-interval="10000">'
         }        
-        item +='<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#999"/></svg>'+
+        item +='<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="100%" fill="#343A40"/></svg>'+
                         '<img src="img/'+value.image+'" class="card-img-top" alt="'+value.marca+'" width="200px" height="300px">'+    
                         '<div class="carousel-caption text-center">'+
                             '<h1>'+value.nome+'</h1>'+
